@@ -1,0 +1,32 @@
+{
+    "category": "Layers",
+    "description": "Display an OGC API feature collection and query features while navigating the map view.",
+    "formal_name": "DisplayOACollection",
+    "ignore": false,
+    "images": [
+        "displayoacollection.jpg"
+    ],
+    "keywords": [
+        "OGC",
+        "OGC API",
+        "feature",
+        "feature layer",
+        "feature table",
+        "service",
+        "table",
+        "web"
+    ],
+    "offline_data": [],
+    "redirect_from": [
+        "/net/latest/maui/sample-code/displayoacollection.htm"
+    ],
+    "relevant_apis": [
+        "OgcFeatureCollectionTable",
+        "QueryParameters"
+    ],
+    "snippets": [
+        "DisplayOACollection.xaml.cs",
+        "DisplayOACollection.xaml"
+    ],
+    "title": "Display OGC API collection"
+}

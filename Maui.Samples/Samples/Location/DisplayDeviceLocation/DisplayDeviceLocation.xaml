@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="ArcGIS.Samples.DisplayDeviceLocation.DisplayDeviceLocation"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Maui;assembly=Esri.ArcGISRuntime.Maui">
+    <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, *">
+        <esriUI:MapView x:Name="MyMapView" Style="{DynamicResource EsriSampleGeoView}" />
+        <Border Style="{DynamicResource EsriSampleControlPanel}" WidthRequest="200">
+            <StackLayout Spacing="5">
+                <Label Text="Select an auto pan mode:" />
+                <Picker x:Name="AutoPanModePicker"
+                        HorizontalTextAlignment="Center"
+                        SelectedIndexChanged="AutoPanModePicker_SelectedIndexChanged"
+                        WidthRequest="150" />
+                <Button x:Name="StartStopButton"
+                        Clicked="StartStopButton_Clicked"
+                        Text="Start"
+                        WidthRequest="150" />
+            </StackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

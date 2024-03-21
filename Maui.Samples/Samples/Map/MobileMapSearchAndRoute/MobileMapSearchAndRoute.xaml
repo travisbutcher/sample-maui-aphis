@@ -1,0 +1,34 @@
+﻿<ContentPage x:Class="ArcGIS.Samples.MobileMapSearchAndRoute.MobileMapSearchAndRoute"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Maui;assembly=Esri.ArcGISRuntime.Maui"
+             xmlns:mapping="clr-namespace:Esri.ArcGISRuntime.Mapping;assembly=Esri.ArcGISRuntime"
+             xmlns:resources="clr-namespace:ArcGIS.Resources">
+    <Grid RowDefinitions="Auto, *" ColumnDefinitions="*, Auto">
+        <esriUI:MapView x:Name="MyMapView" Style="{DynamicResource EsriSampleGeoView}" />
+        <Border Style="{DynamicResource EsriSampleControlPanel}">
+            <ScrollView>
+                <VerticalStackLayout Spacing="5">
+                    <Label LineBreakMode="WordWrap"
+                           MaximumWidthRequest="300"
+                           Text="Select a map from the package. If a network is available, you can route between tapped points. If a locator is available, the address for each tapped point will be displayed in a callout." />
+                    <ListView x:Name="MapListView"
+                              Margin="0,5"
+                              HeightRequest="140"
+                              ItemSelected="Map_Selected"
+                              MaximumWidthRequest="400">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="mapping:Map">
+                                <ViewCell>
+                                    <Label HorizontalTextAlignment="Start"
+                                           Text="{Binding Item.Name}"
+                                           VerticalTextAlignment="Center" />
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+    </Grid>
+</ContentPage>

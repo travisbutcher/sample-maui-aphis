@@ -1,0 +1,31 @@
+{
+    "category": "Layers",
+    "description": "Show features from an online feature service.",
+    "formal_name": "FeatureLayerUrl",
+    "ignore": false,
+    "images": [
+        "featurelayerurl.jpg"
+    ],
+    "keywords": [
+        "feature table",
+        "layer",
+        "layers",
+        "service"
+    ],
+    "offline_data": [],
+    "redirect_from": [
+        "/net/latest/maui/sample-code/featurelayerurl.htm"
+    ],
+    "relevant_apis": [
+        "Basemap",
+        "FeatureLayer",
+        "Map",
+        "MapView",
+        "ServiceFeatureTable"
+    ],
+    "snippets": [
+        "FeatureLayerUrl.xaml.cs",
+        "FeatureLayerUrl.xaml"
+    ],
+    "title": "Feature layer (feature service)"
+}

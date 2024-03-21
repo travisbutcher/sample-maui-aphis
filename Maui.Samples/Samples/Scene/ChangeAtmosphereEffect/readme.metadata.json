@@ -1,0 +1,27 @@
+{
+    "category": "Scene",
+    "description": "Changes the appearance of the atmosphere in a scene.",
+    "formal_name": "ChangeAtmosphereEffect",
+    "ignore": false,
+    "images": [
+        "changeatmosphereeffect.jpg"
+    ],
+    "keywords": [
+        "atmosphere",
+        "horizon",
+        "sky"
+    ],
+    "offline_data": [],
+    "redirect_from": [
+        "/net/latest/maui/sample-code/changeatmosphereeffect.htm"
+    ],
+    "relevant_apis": [
+        "SceneView",
+        "SceneView.AtmosphereEffect"
+    ],
+    "snippets": [
+        "ChangeAtmosphereEffect.xaml.cs",
+        "ChangeAtmosphereEffect.xaml"
+    ],
+    "title": "Change atmosphere effect"
+}

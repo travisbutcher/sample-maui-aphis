@@ -1,0 +1,33 @@
+{
+    "category": "Location",
+    "description": "Display your current position on the map, as well as switch between different types of auto pan modes.",
+    "formal_name": "DisplayDeviceLocation",
+    "ignore": false,
+    "images": [
+        "displaydevicelocation.jpg"
+    ],
+    "keywords": [
+        "GPS",
+        "compass",
+        "location",
+        "map",
+        "mobile",
+        "navigation"
+    ],
+    "offline_data": [],
+    "redirect_from": [
+        "/net/latest/maui/sample-code/displaydevicelocation.htm",
+        "/net/maui/sample-code/display-device-location/"
+    ],
+    "relevant_apis": [
+        "LocationDisplay",
+        "LocationDisplay.AutoPanMode",
+        "Map",
+        "MapView"
+    ],
+    "snippets": [
+        "DisplayDeviceLocation.xaml.cs",
+        "DisplayDeviceLocation.xaml"
+    ],
+    "title": "Display device location with autopan modes"
+}

@@ -1,0 +1,28 @@
+{
+    "category": "MapView",
+    "description": "Rotate a map.",
+    "formal_name": "MapRotation",
+    "ignore": false,
+    "images": [
+        "maprotation.jpg"
+    ],
+    "keywords": [
+        "rotate",
+        "rotation",
+        "viewpoint"
+    ],
+    "offline_data": [],
+    "redirect_from": [
+        "/net/latest/maui/sample-code/maprotation.htm"
+    ],
+    "relevant_apis": [
+        "Compass",
+        "Map",
+        "MapView"
+    ],
+    "snippets": [
+        "MapRotation.xaml.cs",
+        "MapRotation.xaml"
+    ],
+    "title": "Map rotation"
+}

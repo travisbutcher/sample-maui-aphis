@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="ArcGIS.Samples.StatisticalQuery.StatisticalQuery"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Maui;assembly=Esri.ArcGISRuntime.Maui">
+    <Grid RowDefinitions="Auto, *" ColumnDefinitions="*, Auto">
+        <esriUI:MapView x:Name="MyMapView" Style="{DynamicResource EsriSampleGeoView}" />
+        <Border Style="{DynamicResource EsriSampleControlPanel}">
+            <VerticalStackLayout Padding="5" Spacing="5">
+                <Grid ColumnDefinitions="100,auto">
+                    <Switch x:Name="OnlyInExtentSwitch" />
+                    <Label Grid.Column="1"
+                           Text="Cities in current extent"
+                           VerticalOptions="Center" />
+                </Grid>
+                <Grid ColumnDefinitions="100,auto">
+                    <Switch x:Name="OnlyBigCitiesSwitch" />
+                    <Label Grid.Column="1"
+                           Text="Cities larger than 5M"
+                           VerticalOptions="Center" />
+                </Grid>
+                <Button x:Name="GetStatsButton"
+                        Clicked="OnExecuteStatisticsQuery_Clicked"
+                        Text="Get Statistics" />
+                <Label Margin="5" Text="Statistics will be rounded to the nearest integer." />
+            </VerticalStackLayout>
+        </Border>
+        <Border x:Name="Results"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="2"
+                Background="{AppThemeBinding Light=#dfdfdf,
+                                             Dark=#303030}"
+                HorizontalOptions="Center"
+                IsVisible="False"
+                StrokeShape="RoundRectangle 10, 10, 10, 10"
+                VerticalOptions="Center">
+            <Grid Margin="5" Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Label x:Name="StatsListed" />
+                <Button Grid.Row="1"
+                        Margin="5"
+                        Clicked="DismissButton_Clicked"
+                        Text="Dismiss" />
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

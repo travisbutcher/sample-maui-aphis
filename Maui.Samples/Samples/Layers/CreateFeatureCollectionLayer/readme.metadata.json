@@ -1,0 +1,30 @@
+{
+    "category": "Layers",
+    "description": "Create a Feature Collection Layer from a Feature Collection Table, and add it to a map.",
+    "formal_name": "CreateFeatureCollectionLayer",
+    "ignore": false,
+    "images": [
+        "createfeaturecollectionlayer.jpg"
+    ],
+    "keywords": [
+        "feature collection",
+        "layers"
+    ],
+    "offline_data": [],
+    "redirect_from": [
+        "/net/latest/maui/sample-code/createfeaturecollectionlayer.htm"
+    ],
+    "relevant_apis": [
+        "Feature",
+        "FeatureCollection",
+        "FeatureCollectionLayer",
+        "FeatureCollectionTable",
+        "Field",
+        "SimpleRenderer"
+    ],
+    "snippets": [
+        "CreateFeatureCollectionLayer.xaml.cs",
+        "CreateFeatureCollectionLayer.xaml"
+    ],
+    "title": "Feature collection layer"
+}

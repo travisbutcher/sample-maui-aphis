@@ -1,0 +1,32 @@
+{
+    "category": "Map",
+    "description": "Display the map at an initial viewpoint representing a bounding geometry.",
+    "formal_name": "SetInitialMapArea",
+    "ignore": false,
+    "images": [
+        "setinitialmaparea.jpg"
+    ],
+    "keywords": [
+        "envelope",
+        "extent",
+        "initial",
+        "viewpoint",
+        "zoom"
+    ],
+    "offline_data": [],
+    "redirect_from": [
+        "/net/latest/maui/sample-code/setinitialmaparea.htm"
+    ],
+    "relevant_apis": [
+        "Envelope",
+        "Map",
+        "MapView",
+        "Point",
+        "Viewpoint"
+    ],
+    "snippets": [
+        "SetInitialMapArea.xaml.cs",
+        "SetInitialMapArea.xaml"
+    ],
+    "title": "Map initial extent"
+}

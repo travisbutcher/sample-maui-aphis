@@ -1,0 +1,38 @@
+{
+    "category": "Layers",
+    "description": "Construct a KML document and save it as a KMZ file.",
+    "formal_name": "CreateAndSaveKmlFile",
+    "ignore": false,
+    "images": [
+        "createandsavekmlfile.jpg"
+    ],
+    "keywords": [
+        "KML",
+        "KMZ",
+        "Keyhole",
+        "OGC",
+        "geometry editor"
+    ],
+    "offline_data": [],
+    "redirect_from": [
+        "/net/latest/maui/sample-code/createandsavekmlfile.htm"
+    ],
+    "relevant_apis": [
+        "GeometryEditor",
+        "GeometryEngine.Project",
+        "KmlDataset",
+        "KmlDocument",
+        "KmlGeometry",
+        "KmlLayer",
+        "KmlNode.SaveAsASync",
+        "KmlPlacemark",
+        "KmlStyle"
+    ],
+    "snippets": [
+        "CreateAndSaveKmlFile.xaml.cs",
+        "CreateAndSaveKmlFile.xaml",
+        "../../../Converters/ColorConverter.cs",
+        "../../../Converters/ImageConverter.cs"
+    ],
+    "title": "Create and save KML file"
+}
